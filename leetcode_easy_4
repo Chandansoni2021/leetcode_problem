@@ -1,0 +1,16 @@
+class Solution(object):
+    def reverse(self, x):
+        lst = list(str(abs(x)))
+        lst.reverse()
+        
+        out1 = int(''.join(lst))
+        
+        if out1 > 2147483647:
+            return 0
+        else:
+
+            if x < 0:
+                return -out1
+
+            else:
+                return out1
