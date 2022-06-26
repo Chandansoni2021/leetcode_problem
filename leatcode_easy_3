@@ -1,0 +1,17 @@
+class Solution(object):
+    def shuffle(self, nums, n):
+
+        g=[]
+        h=[]
+        out=[]
+# n=int(input())
+        for i in range(0,n):
+            g.append(nums[i])
+# print(g)
+        for i in range(n,len(nums)):
+            h.append(nums[i])
+# print(h)
+        for i in range(0,n):
+            out.append(g[i])
+            out.append(h[i])
+        return out
