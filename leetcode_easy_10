@@ -1,0 +1,10 @@
+class Solution:
+    def strStr(self, haystack: str, needle: str) -> int:
+        if needle in haystack:
+            h=haystack.find(needle)
+            return h
+        if needle=="":
+            return 0
+        if needle not in haystack:
+            return -1
+            
