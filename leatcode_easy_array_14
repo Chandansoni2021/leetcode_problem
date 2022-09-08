@@ -1,0 +1,12 @@
+class Solution:
+    def removeDuplicates(self, nums):
+        v=[]
+        l=0
+        for i in nums:
+            if i not in v:
+                v.append(i)
+                nums[l]=i
+                l=l+1
+                
+        return l
+                
