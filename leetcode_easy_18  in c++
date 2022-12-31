@@ -1,0 +1,19 @@
+best simple with comments solution in c++ with 17 ms runtime o(n) time complexity, space complexity
+Chandan_soni777
+
+
+Code
+
+class Solution {
+public:
+    int maxDepth(TreeNode* root) {
+        // in this question basically in my word that we want to find the level of this binary tree.
+        if(root==NULL){
+            return 0;
+        }
+        else{
+            return max(maxDepth(root->left),maxDepth(root->right))+1;
+            // in this code we use recursion by above image you see that how it is work first we take left node then we can call a function itself to reach the base condition along with we take right node to check to reach the leaf node then we take max and add+1 because we could'nt take root node so we do this so we solve it ;
+        }
+    }
+};
