@@ -1,0 +1,47 @@
+o(n) complexity code
+
+Code
+class Solution {
+public:
+    void reverseString(vector<char>& s) {
+        int n=s.size();
+        int st=0,e=n-1;
+
+        // s is start position and e is last position 
+        // we do this because we can't use another array so er use swap method . for reversing we replace  first element with last element and second element with second last element and so on.
+
+        // ex = h,e,l,l,o = o,e,l,l,h = o,l,l,e,h and so on so we get desired output 
+        // so in problem we see that we must do this by modifying the input array of chracters
+
+        while(st<e){   // it works when st is less than e
+        char temp = s[st];
+        s[st]=s[e];
+        s[e]=temp;
+        st++;
+        e--;
+         }
+    }
+};
+
+
+
+
+
+                        or
+
+o(1) complexity code-
+code
+
+class Solution {
+public:
+    void reverseString(vector<char>& s) {
+        return reverse(s.begin(),s.end());
+    }
+};
+
+
+// it is builtin method in c++
+https://devdocs.io/cpp/algorithm/reverse
+0
+0
+
